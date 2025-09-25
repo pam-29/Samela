@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('lyrics');
             $table->string('photo');
             $table->string('category');
+            $table->foreignId('singer_id')->nullable()->constrained();
             $table->timestamps();
         });
     }

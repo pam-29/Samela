@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Models;
-
+use App\Models\Singers;
 use Illuminate\Database\Eloquent\Model;
 
 class Songs extends Model
@@ -13,5 +13,10 @@ class Songs extends Model
         'lyrics',
         'photo',
         'category',
+        'singer_id',
     ];
+
+    public function singer(){
+        return $this->belongsTo(Singers::class, 'singer_id');
+    }
 }
