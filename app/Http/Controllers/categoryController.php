@@ -21,7 +21,7 @@ class categoryController extends Controller
             'photo'=> $request->input('photo'),
             'category'=> $request->input('category'),
         ]);
-        return redirect()->route('categories.list');
+        return redirect()->route('songs.list');
     }
 
     public function list_all(){
@@ -44,7 +44,7 @@ class categoryController extends Controller
             'photo'=> $request->input('photo'),
             'category'=> $request->input('category'),
         ]);
-        return redirect()->route('');
+        return redirect()->route('songs.list', $id);
     }
 
     public function delete($id){
@@ -55,6 +55,6 @@ class categoryController extends Controller
 
     public function edit($id){
         $song= Songs::findOrFail($id);
-        return view('', compact(''));
+        return view('Songs.edit', compact('song'));
     }
 }

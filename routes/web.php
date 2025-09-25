@@ -8,7 +8,7 @@ Route::get('/', function () {
 });
 
 
-Route::prefix('categories')->name('categories.')->group(function(){
+Route::prefix('songs')->name('songs.')->group(function(){
     //create
     Route::get('create', [categoryController::class, 'create'])->name('create');
     Route::post('store', [categoryController::class, 'store'])->name('store');

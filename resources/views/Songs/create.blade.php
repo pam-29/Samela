@@ -1,6 +1,6 @@
 <h1>Add a song</h1>
 
-<form action="{{ route('categories.store') }}" method="POST">
+<form action="{{ route('songs.store') }}" method="POST">
     @csrf
     <label for="title">Title:</label>
     <input type="text" id="title" name="title" required><br><br>
