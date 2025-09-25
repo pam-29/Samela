@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('audio');
             $table->string('lyrics');
             $table->string('photo');
+            $table->string('category');
             $table->timestamps();
         });
     }

@@ -17,5 +17,8 @@
     <label for="photo">Photo URL:</label>
     <input type="text" id="photo" name="photo" required><br><br>
 
+    <label for="category">Category:</label>
+    <input type="text" id="category" name="category" required><br><br>
+
     <input type="submit" value="Add to sing">
 </form>

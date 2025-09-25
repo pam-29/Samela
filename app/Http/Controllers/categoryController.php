@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class categoryController extends Controller
 {
     public function create(){
-        return view('');
+        return view('Songs.create');
     }
 
     //recuperer les elements créer dans create
@@ -19,18 +19,19 @@ class categoryController extends Controller
             'audio'=> $request->input('audio'),
             'lyrics'=> $request->input('lyrics'),
             'photo'=> $request->input('photo'),
+            'category'=> $request->input('category'),
         ]);
         return redirect()->route('categories.list');
     }
 
     public function list_all(){
         $songs = Songs::all();
-        return view('Songs.category', compact('Songs'));
+        return view('Songs.all', compact('songs'));
     }
 
     public function show($id){
         $song= Songs::findOrFail($id);
-        return view('', compact(''));
+        return view('Songs.', compact('song'));
     }
 
     public function update(Request $request,$id){
@@ -41,6 +42,7 @@ class categoryController extends Controller
             'audio'=> $request->input('audio'),
             'lyrics'=> $request->input('lyrics'),
             'photo'=> $request->input('photo'),
+            'category'=> $request->input('category'),
         ]);
         return redirect()->route('');
     }
