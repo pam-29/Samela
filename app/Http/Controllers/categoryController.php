@@ -20,7 +20,7 @@ class categoryController extends Controller
             'lyrics'=> $request->input('lyrics'),
             'photo'=> $request->input('photo'),
         ]);
-        return redirect()->route('');
+        return redirect()->route('categories.list');
     }
 
     public function list_all(){
