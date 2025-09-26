@@ -42,7 +42,7 @@ class songController extends Controller
             ]);
         }
 
-        return redirect()->route('admin')->with('great', 'Une chanson à été ajouté ');
+        return redirect()->route('admin')->with('great', 'Song added ');
     }
 
     public function list_all(){
@@ -72,7 +72,7 @@ class songController extends Controller
     public function delete($id){
         $song= Songs::findOrFail($id);
         $song->delete();
-        return redirect()->route('admin')->with('success', 'Une chanson a été supprimé ');
+        return redirect()->route('admin')->with('success', 'Song deleted ');
     }
 
 
@@ -84,5 +84,10 @@ class songController extends Controller
     public function dashboard(){
         $songs = Songs::all();
         return view('admin', compact('songs'));
+    }
+
+    public function showsong(){
+        $songs = Songs::all();
+        return view('Songs.list_song', compact('songs'));
     }
 }
