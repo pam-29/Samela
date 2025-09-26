@@ -16,7 +16,7 @@
             <img src="samela.png" alt="">
         </div>
 
-        <a href="{{ route('songs.create')}}" class="btn btn-success btn-create">Ajouter une chanson</a>
+        <a href="{{ route('songs.create')}}" class="btn btn-success btn-create">Add a song</a>
 
         @if (session('success'))
             <div id="flash-message" class="flash-message">

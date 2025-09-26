@@ -21,6 +21,7 @@ Route::prefix('songs')->name('songs.')->group(function(){
     //get
     Route::get('list', [songController::class, 'list_all'])->name('list');
     Route::get('show/{id}', [songController::class, 'show'])->name('show');
+    Route::get('showsong', [songController::class, 'showsong'])->name('showsong');
     Route::get('singer', [singerController::class, 'list_singer'])->name('singer');  //afficher tous.es les chanteurs.euses
     Route::get('singerlist/{id}', [singerController::class, 'show_singer'])->name('singerlist'); //afficher les chansons associées à leur chanteur
     
