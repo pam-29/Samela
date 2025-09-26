@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Models;
-use App\Models\Singers;
+use App\Models\Singers; 
 use Illuminate\Database\Eloquent\Model;
 
 class Songs extends Model
