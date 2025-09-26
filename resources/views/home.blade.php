@@ -17,8 +17,6 @@
     
             <div class="btn">
                 <a href="{{ route('songs.singer') }}">Choisir par artistes</a>
-                <a href="">Parcourir des chansons</a>
-                <a href="">Browse singers</a>
                 <a href="{{route('songs.showsong')}}">Browse songs</a>
             </div>
         </div>

@@ -1,8 +1,15 @@
 <head>
     <link rel="stylesheet" href="{{asset('styles/song.css')}}"/>
+    <link rel="stylesheet" href="{{ asset('styles/list.css') }}">
 </head>
 
+<div class="btn">
+            <a href="{{ route('home') }}">Home</a>
+</div>
+
+
 <h1>All songs</h1>
+
 <div class="wrapper">
 		<span>🎤</span>
         <span>🎶</span>

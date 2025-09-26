@@ -11,6 +11,10 @@
         <span>🎹</span>
         <span>🎵</span>
 
+        <div class="btn">
+            <a href="{{ route('home') }}">Home</a>
+        </div>
+
         <div class="container">
             <h1>All the singers</h1>
             <div class="container-list">
