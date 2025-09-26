@@ -66,7 +66,7 @@ class songController extends Controller
             'category'=> $request->input('category'),
             'singer_id'=> $request->input('singer_id'),
         ]);
-        return redirect()->route('songs.list', $id);
+        return redirect()->route('admin');
     }
 
     public function delete($id){
