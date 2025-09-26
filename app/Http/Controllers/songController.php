@@ -79,4 +79,9 @@ class songController extends Controller
         $song= Songs::findOrFail($id);
         return view('Songs.edit', compact('song'));
     }
+
+    public function dashboard(){
+        $songs = Songs::all();
+        return view('admin', compact('songs'));
+    }
 }

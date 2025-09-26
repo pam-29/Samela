@@ -8,6 +8,8 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('admin', [songController::class, 'dashboard'])->name('admin');
+
 
 Route::prefix('songs')->name('songs.')->group(function(){
     //create
