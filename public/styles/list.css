@@ -99,6 +99,13 @@ h1{
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.singer-list{
+        display: grid;
+    align-content: center;
+    justify-items: center;
+    text-decoration: none;
+}
+
 .list-item:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
@@ -134,4 +141,8 @@ h1{
 
 .btn a:nth-child(2){
     background-color: #82cafa;
+}
+
+.container-song{
+width: 80%;
 }

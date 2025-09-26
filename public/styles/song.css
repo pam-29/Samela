@@ -79,7 +79,10 @@ body{
 
 .list-song{
     padding: 0;
-    display: flex;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+
 }
 
 .list-song-item{
