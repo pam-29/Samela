@@ -1,34 +1,47 @@
-<a href="{{ route('songs.list') }}">Back</a>
+<link rel="stylesheet" href="{{ asset('styles/info.css') }}">
 
-<div>
-    <h1>{{ $song->singer }}</h1>
-    <h2>{{ $song->title }}</h2>
 
-    <p>{{ $song->singer }}</p>
 
-            @if($song->audio)
-                @php
-                    $raw = $song->audio;
-                    $audioSrc = preg_match('/^https?:\\/\\//i', $raw) ? $raw : asset('storage/' . ltrim($raw, '/'));
-                @endphp
+<body>
 
-                <audio id="song-audio" controls preload="none">
-                    <source id="song-source" src="{{ $audioSrc }}" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            @else
-                <p>No audio available.</p>
-            @endif
+        <div class="btn">
+            <a href="{{ route('songs.list') }}">Back</a>
+        </div>
 
-            @if($song->photo)
-                <img src="{{ $song->photo }}" alt="">
-            @endif
+    <div class="container">
 
-            @if($song->lyrics && preg_match('/^https?:\\/\\//i', $song->lyrics))
-                <iframe src="{{ $song->lyrics }}" frameborder="0"></iframe>
-            @elseif($song->lyrics)
-                <div class="lyrics">
-                    {!! nl2br(e($song->lyrics)) !!}
-                </div>
-            @endif
-</div>
+        <div class="logo">
+            <img src="{{ asset('samela.png') }}" alt="Logo">
+        </div>
+
+            <h1>🎶{{ $song->title }}🎶</h1>
+
+            <p>🎤{{ $song->singer }}🎤</p>
+
+                    @if($song->audio)
+                        @php
+                            $raw = $song->audio;
+                            $audioSrc = preg_match('/^https?:\\/\\//i', $raw) ? $raw : asset('storage/' . ltrim($raw, '/'));
+                        @endphp
+
+                        <audio id="song-audio" controls preload="none">
+                            <source id="song-source" src="{{ $audioSrc }}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    @else
+                        <p>No audio available.</p>
+                    @endif
+
+                    @if($song->photo)
+                        <img src="{{ $song->photo }}" alt="" class="song-photo">
+                    @endif
+
+                    @if($song->lyrics && preg_match('/^https?:\\/\\//i', $song->lyrics))
+                        <iframe src="{{ $song->lyrics }}" frameborder="0" ></iframe>
+                    @elseif($song->lyrics)
+                        <div class="lyrics">
+                            {!! nl2br(e($song->lyrics)) !!}
+                        </div>
+                    @endif
+    </div>
+</body>

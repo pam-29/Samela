@@ -1,0 +1,64 @@
+body{
+    background-image: url("../fond.jpg");
+    background-size: cover;
+    background-attachment: fixed; 
+    color: white;
+}
+p{
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.song-photo{
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn {
+    gap: 30px; 
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.btn a {
+    text-align: center;
+    padding: 15px 35px; 
+    border-bottom: solid 10px black;
+    border-radius: 20px;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #ffd500;
+}
+
+.btn a:nth-child(1){
+    background-color: #ffd500;
+}
+
+.btn a:nth-child(2){
+    background-color: #82cafa;
+}
+
+.lyrics{
+width: 70%;
+background-color: rgba(240, 248, 255, 0.929);
+color: black;
+border-radius: 10px;
+font-size: 28px;
+text-align: center;
+padding: 20px;
+margin-bottom: 40px;
+}
