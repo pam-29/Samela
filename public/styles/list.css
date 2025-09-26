@@ -1,0 +1,137 @@
+body{
+background: radial-gradient(circle,rgba(0, 0, 0, 1) 0%, rgba(182, 70, 252, 1) 100%);
+    height: 100vh;    
+}
+.wrapper span {
+	position: fixed;
+	bottom: -80px;
+	animation: animate 10s linear infinite;
+	font-size: 60px;
+	z-index: -1;
+}
+
+.wrapper span:nth-child(1){
+    left: 60px;
+    animation-delay: 0.0s;    
+}
+.wrapper span:nth-child(2){
+    left: 10%;
+    animation-delay: 2s;  
+}
+.wrapper span:nth-child(3){
+    left: 20%;
+    animation-delay: 1s;    
+}
+.wrapper span:nth-child(4){
+    left: 30%;
+    animation-delay: 4s;   
+}
+.wrapper span:nth-child(5){
+    left: 40%;
+    animation-delay: 1s;    
+}
+.wrapper span:nth-child(6){
+    left: 50%;
+    animation-delay: 6s;    
+}
+.wrapper span:nth-child(7){
+    left: 60%;
+    animation-delay: 5s;  
+}
+.wrapper span:nth-child(8){
+    left: 70%;
+    animation-delay: 7s;    
+}
+.wrapper span:nth-child(9){
+    left: 80%;
+    animation-delay: 5s;  
+}
+.wrapper span:nth-child(10){
+    left: 90%;
+    animation-delay: 3s;    
+}
+
+
+@keyframes animate{
+    0% {
+        transform: translateY(0);
+        opacity: 1
+    }
+    70%{
+        opacity: .8;
+    }
+    100% {
+        transform: translateY(-800px) rotate(360deg);	
+        opacity: 0
+    }
+}
+
+h1{
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 10px;
+}
+
+.list-item {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+    color: white;
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+
+.btn {
+    gap: 30px; 
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.btn a {
+    text-align: center;
+    padding: 15px 35px; 
+    border-bottom: solid 10px black;
+    border-radius: 20px;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #ffd500;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.btn a:nth-child(1){
+    background-color: #ffd500;
+}
+
+.btn a:nth-child(2){
+    background-color: #82cafa;
+}

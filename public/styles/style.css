@@ -40,3 +40,15 @@ body{
 .btn a:nth-child(2){
     background-color: #82cafa;
 }
+
+.btn a:nth-child(1):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.btn a:nth-child(2):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}

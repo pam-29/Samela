@@ -6,7 +6,7 @@ use App\Http\Controllers\singerController;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 Route::get('admin', [songController::class, 'dashboard'])->name('admin');
 

@@ -51,7 +51,11 @@ p{
 .btn a:nth-child(2){
     background-color: #82cafa;
 }
-
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
 .lyrics{
 width: 70%;
 background-color: rgba(240, 248, 255, 0.929);

@@ -4,7 +4,7 @@
 <body>
 
         <div class="btn">
-            <a href="{{ route('songs.list') }}">Back</a>
+            <a href="{{ route('home') }}">Home</a>
         </div>
 
     <div class="container">

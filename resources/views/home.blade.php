@@ -16,7 +16,7 @@
             <h1>ssss</h1>
     
             <div class="btn">
-                <a href="">Choisir par artistes</a>
+                <a href="{{ route('songs.singer') }}">Choisir par artistes</a>
                 <a href="">Parcourir des chansons</a>
             </div>
         </div>

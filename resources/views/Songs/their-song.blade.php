@@ -1,13 +1,33 @@
-<h1>My song</h1>
+<link rel="stylesheet" href="{{ asset('styles/list.css') }}">
+<body>
 
-<ul>
-        @foreach ($singer->songs as $song)
-        <li>
-            <a href="{{ route('songs.show', $song->id) }}">
-                {{ $song->title }}
-            </a>
-        </li>
-    @endforeach
-</ul>
+        <div class="wrapper">
+		<span>🎤</span>
+        <span>🎶</span>
+        <span>✨</span>
+        <span>🎷</span>
+        <span>🎸</span>
+        <span>🎺</span>
+        <span>🎹</span>
+        <span>🎵</span>
 
-<a href="{{ route('songs.singer') }}"> Back to singers</a>
+</div>
+<div class="container">
+        <h1>Songs</h1>
+
+        <div class="container-list">
+            <ul>
+                @foreach ($singer->songs as $song)
+                
+                    <a class="list-item"href="{{ route('songs.show', $song->id) }}">
+                    {{ $song->title }}
+                    </a>
+                    
+                @endforeach
+            </ul>
+        </div>
+        <div class="btn">
+            <a href="{{ route('songs.singer') }}"> Back to singers</a>
+        </div>
+    </div>
+</body>
