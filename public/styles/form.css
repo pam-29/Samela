@@ -1,0 +1,37 @@
+body{
+background: radial-gradient(circle,rgba(0, 0, 0, 1) 0%, rgba(182, 70, 252, 1) 100%);
+}
+h1{
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color:rgb(236, 228, 253);
+    border-radius: 10px;
+}
+
+form input, form select, form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(77, 32, 173);
+    font-size: 16px;
+    background-color: rgb(248, 245, 254);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #6b6b6b; 
+    font-style: italic;
+}

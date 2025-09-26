@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="{{ asset('styles/info.css') }}">
 
 
-
 <body>
 
         <div class="btn">
