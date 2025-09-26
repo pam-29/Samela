@@ -1,5 +1,7 @@
 
 <link rel="stylesheet" href="{{ asset('styles/form.css') }}">
+<link rel="icon" href="/logo-header.png" type="image/x-icon">
+    <title>Create</title>
 
 <div class="container">
     <h1>Add a song to archive</h1>

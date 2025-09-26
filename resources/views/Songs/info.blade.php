@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="{{ asset('styles/info.css') }}">
+<link rel="icon" href="/logo-header.png" type="image/x-icon">
+    <title>Songs</title>
 
 
 <body>

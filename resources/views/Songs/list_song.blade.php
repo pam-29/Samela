@@ -1,6 +1,8 @@
 <head>
     <link rel="stylesheet" href="{{asset('styles/song.css')}}"/>
     <link rel="stylesheet" href="{{ asset('styles/list.css') }}">
+    <link rel="icon" href="/logo-header.png" type="image/x-icon">
+    <title>Songs</title>
 </head>
 
 <div class="btn">

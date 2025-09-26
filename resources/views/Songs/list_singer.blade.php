@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="{{ asset('styles/list.css') }}">
+<link rel="icon" href="/logo-header.png" type="image/x-icon">
+<title>Singers</title>
+
     <body>
 
         <div class="wrapper">
