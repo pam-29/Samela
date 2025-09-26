@@ -3,7 +3,7 @@
 </head>
 
 <div class="container-list">
-    <h1>Toutes les chansons</h1>
+    <h1>All songs</h1>
 
         <div>
             <ul class="list">
@@ -14,8 +14,8 @@
                             </a> 
         
                             <div class="btn-list">
-                                <a href="{{ route('songs.edit', $song->id) }}" class="btn-edit">Editer </a>
-                                <a href="{{ route('songs.delete', $song->id) }}" class="btn-delete">Supprimer</a>
+                                <a href="{{ route('songs.edit', $song->id) }}" class="btn-edit">Edit </a>
+                                <a href="{{ route('songs.delete', $song->id) }}" class="btn-delete">Delete</a>
                             </div>
                         </li>
                 @endforeach

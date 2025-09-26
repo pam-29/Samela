@@ -13,11 +13,11 @@
         </div>
     
         <div class="content">
-            <h1>ssss</h1>
+            <h1>The place where you can free and deliver your soul from Beyonce !</h1>
     
             <div class="btn">
-                <a href="">Choisir par artistes</a>
-                <a href="">Parcourir des chansons</a>
+                <a href="">Browse singers</a>
+                <a href="{{route('songs.showsong')}}">Browse songs</a>
             </div>
         </div>
     </div>
